@@ -4,7 +4,11 @@ import ReactMarkdown from "react-markdown";
 const JobDescription = ({ job }) => {
   const [open, setOpen] = useState(false);
   if (job == null) {
-    return <React.Fragment></React.Fragment>;
+    return (
+      <div style={{textAlign:"center"}}>
+        No job selected to display
+      </div>
+    );
   }
   return (
     <Card className="mb-3">

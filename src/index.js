@@ -4,12 +4,10 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
-import Slider from "./Slider.js";
-import Grocery from "./Grocery.js";
-import TodoList from "./TodoList.js";
+
 ReactDOM.render(
   <React.StrictMode>
-<App></App>
+    <App></App>
   </React.StrictMode>,
   document.getElementById("root")
 );

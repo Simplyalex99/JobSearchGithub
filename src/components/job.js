@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Badge } from "react-bootstrap";
 import ReactMarkdown from "react-markdown";
-import "./App.css";
+import "../App.css";
 const Job = ({ job, onClick }) => {
   return (
     <Card>

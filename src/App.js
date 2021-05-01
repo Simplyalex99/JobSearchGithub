@@ -1,12 +1,12 @@
 import logo from "./logo.svg";
 //import "./App.css";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import useFetchJobs from "./useFetchJobs";
-import Job from "./job";
+import { Container, Row, Col, Spinner } from "react-bootstrap";
+import useFetchJobs from "./hooks/useFetchJobs";
+import Job from "./components/job";
 import React, { useState } from "react";
-import JobDescription from "./JobDescription.js";
-import Pagination from "./Pagination.js";
-import { SearchForm } from "./SearchForm";
+import JobDescription from "./components/JobDescription.js";
+import Pagination from "./components/Pagination.js";
+import { SearchForm } from "./components/SearchForm";
 function App() {
   const [params, setParams] = useState({});
   const [page, setPage] = useState(1);
@@ -41,7 +41,11 @@ function App() {
       </SearchForm>
       <Row>
         <Col>
-          {loading && <h1>Loading...</h1>}
+          {loading && (
+            <Spinner animation="border" role="status">
+              <span className="sr-only">Loading...</span>
+            </Spinner>
+          )}
           {!loading && (
             <Pagination
               jobsPerPage={jobsPerPage}
