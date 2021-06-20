@@ -2,7 +2,7 @@
 ## Status
 GitHub's job API has shutdown. Currently users can no longer interact with jobs in application on Heroku.
 ## Description
-A job search application using GitHub's API. User can not see jobs no longer due to the status above. To use, please visit https://pacific-headland-02767.herokuapp.com/ .
+A job search application using GitHub's API. User can no longer see jobs due to the status above. To use, please visit https://pacific-headland-02767.herokuapp.com/ .
 ## Todos
 - combine shoppingApp repo with this application so users can save selected jobs if they find one interesting.
 
