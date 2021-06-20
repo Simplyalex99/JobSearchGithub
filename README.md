@@ -9,4 +9,4 @@ A job search application using GitHub's API. To use, please visit https://pacifi
 I really liked the layout of Indeed Job search. I decided to implement a similar yet simpler app with pagination instead of infinite scrolling. 
 
 ## Status
-Production application currently does not work because API key needs to be updated.
+Production application currently does not work on Heroku because API key needs to be updated.
